@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("./img/image\ 5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  /* margin: 20px 40px 20px 40px; */
+}
+
+.container {
+  width: 520px;
+  background: #00000066;
+  color: white;
+  /* border: 2px solid rgba(255, 255, 255, 255); */
+  position: relative;
+  right: 17rem;
+  padding: 200px 100px;
+  margin-right: 13em;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.container .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  /* background: yellow; */
+  margin: 30px 0;
+  border-bottom: 2px solid white;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 0.1rem;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: white;
+  font-weight: 400;
+  padding: 20px 35px 20px 20px;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+
+.input-box .icon {
+  position: absolute;
+  top: 50%;
+  right: 0.7rem;
+  font-size: 1.2em;
+  line-height: 0.5rem;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  background: #8ed8ed;
+  border-radius: 20px;
+  border: none;
+  font-size: 1em;
+  font-weight: 400;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 90%;
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .input-box {
+        height: 40px;
+    }
+
+    .input-box input {
+        padding: 10px 20px 10px 10px;
+    }
+
+    .input-box .icon {
+        font-size: 1em;
+    }
+
+    .btn {
+        height: 35px;
+        font-size: 0.9em;
+    }
+}
