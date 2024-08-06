@@ -105,8 +105,12 @@ h1 {
 
 @media (max-width: 576px) {
     .container {
-        width: 90%;
-        padding: 50px 20px;
+        width: 100%;
+        /* padding: 50px 20px; */
+         position: relative;
+         right: 0.9rem;
+          padding: 200px 100px;
+          margin: 0 20px;
     }
 
     h1 {
