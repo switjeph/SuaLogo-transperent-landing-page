@@ -97,43 +97,43 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    .container {
-        width: 80%;
-        padding: 100px 50px;
-         position: relative;
-         left: 5rem;
-          /* padding: 200px 100px; */
-    }
+  .container {
+    width: 80%;
+    padding: 100px 50px;
+    position: relative;
+    left: 5rem;
+    /* padding: 200px 100px; */
+  }
 }
 
 @media (max-width: 576px) {
-    .container {
-        width: 100%;
-        /* padding: 50px 20px; */
-         position: relative;
-         right: 0.9rem;
-          padding: 200px 100px;
-          margin: 0 15px;
-    }
+  .container {
+    width: 80%;
+    /* padding: 50px 20px; */
+    position: relative;
+    left: 3rem;
+    padding: 100px 50px;
+    /* margin: 0 ; */
+  }
 
-    h1 {
-        font-size: 28px;
-    }
+  h1 {
+    font-size: 28px;
+  }
 
-    .input-box {
-        height: 40px;
-    }
+  .input-box {
+    height: 40px;
+  }
 
-    .input-box input {
-        padding: 10px 20px 10px 10px;
-    }
+  .input-box input {
+    padding: 10px 20px 10px 10px;
+  }
 
-    .input-box .icon {
-        font-size: 1em;
-    }
+  .input-box .icon {
+    font-size: 1em;
+  }
 
-    .btn {
-        height: 35px;
-        font-size: 0.9em;
-    }
+  .btn {
+    height: 35px;
+    font-size: 0.9em;
+  }
 }
