@@ -100,6 +100,9 @@ h1 {
     .container {
         width: 80%;
         padding: 100px 50px;
+         position: relative;
+         left: 5rem;
+          /* padding: 200px 100px; */
     }
 }
 
@@ -110,7 +113,7 @@ h1 {
          position: relative;
          right: 0.9rem;
           padding: 200px 100px;
-          margin: 0 20px;
+          margin: 0 15px;
     }
 
     h1 {
