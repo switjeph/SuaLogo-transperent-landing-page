@@ -8,7 +8,7 @@
 }
 
 body {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -23,40 +23,52 @@ body {
 }
 
 .container {
-  width: 520px;
+  display: flex;
+  width: 550px;
   background: #00000066;
   color: white;
+  height: 37.2rem;
+  overflow: hidden;
   /* border: 2px solid rgba(255, 255, 255, 255); */
-  position: relative;
-  right: 17rem;
-  padding: 200px 100px;
-  margin-right: 13em;
+  /* position: relative; */
+  /* right: .7rem; */
+  /* padding: 200px 0px; */
+  /* margin-right: 13em; */
 }
 
-h1 {
+h1, .logo-img {
+  position: relative;
   font-size: 36px;
+  top: 10rem;
+  left: 12rem;
   text-align: center;
 }
 
 .container .input-box {
+  /* align-items: center; */
+  /* justify-content: center; */
   position: relative;
+  right: 3.5rem;
+  top: 12rem;
   width: 100%;
-  height: 50px;
+  /* height: 70px; */
   /* background: yellow; */
-  margin: 30px 0;
+  /* margin: 30px 0; */
   border-bottom: 2px solid white;
 }
 
 .input-box label {
-  position: absolute;
-  top: 50%;
+  /* justify-content: center; */
+  /* align-items: center; */
+  position: relative;
+  bottom: 1rem;
   left: 0.1rem;
   transform: translateY(-50%);
   font-size: 1rem;
   color: white;
   font-weight: 500;
   pointer-events: none;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .input-box input {
@@ -73,7 +85,7 @@ h1 {
 
 .input-box input:focus ~ label,
 .input-box input:valid ~ label {
-  top: -5px;
+  top: -40px;
 }
 
 .input-box .icon {
@@ -85,6 +97,9 @@ h1 {
 }
 
 .btn {
+  position: relative;
+  top: 14rem;
+  right: 3.5rem;
   width: 100%;
   height: 40px;
   background: #8ed8ed;
@@ -102,38 +117,62 @@ h1 {
     padding: 100px 50px;
     position: relative;
     left: 5rem;
+    top: 10rem;
+    height: 700px;
     /* padding: 200px 100px; */
   }
-}
 
-@media (max-width: 576px) {
-  .container {
-    width: 80%;
-    /* padding: 50px 20px; */
-    position: relative;
-    left: 3rem;
-    padding: 100px 50px;
-    /* margin: 0 ; */
+  h1, .logo-img {
+    font-size: 55px;
+    top: 5rem;
+    left: 9rem;
   }
 
-  h1 {
-    font-size: 28px;
-  }
-
-  .input-box {
-    height: 40px;
-  }
-
-  .input-box input {
-    padding: 10px 20px 10px 10px;
-  }
-
-  .input-box .icon {
-    font-size: 1em;
+  .container .input-box {
+    /* width: 100%; */
+    width: 350px;
+    top: 10rem;
+    right: 10.5rem;
   }
 
   .btn {
-    height: 35px;
-    font-size: 0.9em;
+    top: 13rem;
+    right: 10.5rem;
+  }
+  
+}
+
+
+
+@media (max-width: 576px) {
+ .container {
+  /* justify-content: center; */
+  /* align-items: center; */
+    /* flex-direction: row; */
+    width: 100%;
+    /* height: 50rem; */
+    height: 700px;
+    top: 7rem;
+    left: 0.1rem;
+    overflow: hidden;
+    /* padding: 20px 50px; */
+  }
+
+  h1, .logo-img {
+    font-size: 45px;
+    top: 5rem;
+    left: 4rem;
+  }
+
+  .container .input-box {
+    /* width: 100%; */
+    width: 250px;
+    top: 10rem;
+    right: 11rem;
+  }
+
+  .btn {
+    top: 12rem;
+    right: 11rem;
   }
 }
